@@ -4,9 +4,9 @@ import {PasswordGeneratorProvider} from "@/passwordGenerator/PasswordGeneratorPr
 export default function Home() {
   return (
         <main className="">
-          <PasswordGeneratorContext>
+          <PasswordGeneratorProvider>
 
-          </PasswordGeneratorContext>
+          </PasswordGeneratorProvider>
         </main>
   )
 }
