@@ -23,24 +23,25 @@ export const GeneratorOptions = ({setOptionsSetting}: {setOptionsSetting: Dispat
                 <ul className="flex flex-col gap-3">
 
                     <li>
-                        <label htmlFor="length">Length:</label>
+                        <label className="w-24 inline-block" htmlFor="length">Length:</label>
                         <input type="number" id="length"
                                value={oldOptions.length}
+                               className="rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:border-0 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
                                onChange={e => setLength(+e.target.value)}/>
                     </li>
 
                     <li>
-                        <label htmlFor="num">Numbers:</label>
+                        <label className="w-24 inline-block" htmlFor="num">Numbers:</label>
                         <input type="checkbox" id="num" checked={oldOptions.includeNumbers} onChange={e => setNumbers(e.target.checked)}/>
                     </li>
 
                     <li>
-                        <label htmlFor="sym">Symbols:</label>
+                        <label className="w-24 inline-block" htmlFor="sym">Symbols:</label>
                         <input type="checkbox" id="sym" checked={oldOptions.includeSymbols} onChange={e => setSymbols(e.target.checked)}/>
                     </li>
 
                     <li>
-                        <label htmlFor="upp">Uppercase:</label>
+                        <label className="w-24 inline-block" htmlFor="upp">Uppercase:</label>
                         <input type="checkbox" id="upp" checked={oldOptions.includeUppercase} onChange={e => setUpper(e.target.checked)}/>
                     </li>
                 </ul>
