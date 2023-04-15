@@ -8,6 +8,7 @@ export const passwordGeneratorReducer = (state: PasswordState, action: Action): 
                 ...action.options
             }
         case "generate":
+            console.log(state)
             return {
                 ...state,
                 value: 'heslo'
